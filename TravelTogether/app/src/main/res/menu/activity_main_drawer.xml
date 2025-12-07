@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--네비게이션 드로어 메뉴 항목-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    app:startDestination="@+id/nav_add"
+    >
+
+    <group android:checkableBehavior="single">
+        <!-- 한 번에 하나만 선택 가능 -->
+        <item
+            android:id="@+id/nav_trip"
+            android:icon="@drawable/baseline_assignment_24"
+            android:title="Trip" />
+        <!-- 홈 메뉴 -->
+        <!-- 아이콘 -->
+        <!-- 메뉴 이름 -->
+        <item
+            android:id = "@+id/nav_message"
+            android:icon="@drawable/baseline_message_24"
+            android:title= "Message"/>
+
+        <!-- 갤러리 메뉴 -->
+<!--
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        &lt;!&ndash; 슬라이드쇼 메뉴 &ndash;&gt;
+-->
+
+    </group>
+</menu>

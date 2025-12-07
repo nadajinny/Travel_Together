@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <!-- 총 금액 표시 -->
+    <TextView
+        android:id="@+id/totalAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 금액: 0 원"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 예산 항목 리스트 -->
+    <ListView
+        android:id="@+id/budgetListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- 예산 항목 추가 버튼 -->
+    <Button
+        android:id="@+id/addBudgetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예산 항목 추가"/>
+
+    <!-- 예산 항목 수정 및 삭제를 위한 입력란 -->
+    <EditText
+        android:id="@+id/editBudgetItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="항목 이름"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editBudgetItemAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="예산 금액"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/saveBudgetItemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:visibility="gone"/> <!-- 처음엔 숨기기 -->
+
+    <Button
+        android:id="@+id/deleteBudgetItemButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="삭제"
+        android:visibility="gone"/> <!-- 처음엔 숨기기 -->
+
+</LinearLayout>

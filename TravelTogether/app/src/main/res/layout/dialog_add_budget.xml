@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/editBudgetItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="항목 이름"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        />
+
+    <EditText
+        android:id="@+id/editBudgetItemAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="예산 금액"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="8dp"/>
+
+</LinearLayout>

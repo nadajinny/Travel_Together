@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--앱의 네비게이션 경로를 정의-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_trip">
+    <!-- 네비게이션 시작 지점 -->
+    <activity
+        android:id = "@+id/nav_chatroom"
+        android:name = "com.example.myapplication.ui.message.ChatRoomActivity"
+        android:label = "Message"
+        tools:layout="@layout/activity_chat_main"/>
+
+
+    <fragment
+        android:name="com.example.myapplication.ui.Trip.BudgetFragment"
+        android:id="@+id/nav_budget"
+        android:label="budget"
+        tools:layout="@layout/fragment_budget"/>
+    <fragment
+        android:name="com.example.myapplication.ui.Trip.TimelineFragment"
+        android:id="@+id/nav_timeline"
+        android:label="Add"
+        tools:layout="@layout/fragment_timeline"/>
+    <fragment
+        android:name="com.example.myapplication.ui.Trip.PrepareFragment"
+        android:id="@+id/nav_prepare"
+        android:label="budget"
+        tools:layout="@layout/fragment_prepare"/>
+    <fragment
+        android:name="com.example.myapplication.ui.Trip.TripFragment"
+        android:id="@+id/nav_trip"
+        android:label="Trip"
+        tools:layout="@layout/fragment_trip"/>
+    <fragment
+        android:id = "@+id/nav_message"
+        android:name = "com.example.myapplication.ui.message.MessageFragment"
+        android:label = "Message"
+        tools:layout="@layout/fragment_message"/>
+    <!-- 홈 프래그먼트 -->
+    <!-- label 화면 제목 -->
+    <!-- 화면 레이아웃 연결 -->
+
+
+    <!-- 슬라이드쇼 프래그먼트 -->
+</navigation>

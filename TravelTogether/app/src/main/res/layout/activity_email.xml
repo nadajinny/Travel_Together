@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:textColor="@color/clear_sky"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+    <TextView
+        android:id="@+id/explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일을 확인하시기 위해서는 ID와 전화번호를 입력해주시길 바랍니다."
+        android:fontFamily="@font/scd5"
+        android:textSize = "12dp"
+        android:paddingTop="80dp"
+        />
+    <EditText
+        android:id="@+id/etUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="ID 입력"
+        android:fontFamily="@font/scd3"
+        android:layout_marginTop="20dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scd3"
+        android:minHeight="48dp"
+        android:hint="전화번호 입력"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnCheckEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:fontFamily="@font/scd5"
+        />
+
+    <TextView
+        android:id="@+id/tvEmailResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

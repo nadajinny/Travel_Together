@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="채팅방 이름"
+
+        android:minHeight="48dp"
+        android:padding="8dp"
+        />
+
+    <EditText
+        android:id="@+id/editInvitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="초대 메시지" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/friendsListView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:choiceMode="multipleChoice" />
+    </ScrollView>
+</LinearLayout>
+    <!-- dialog_add_chat_room.xml -->

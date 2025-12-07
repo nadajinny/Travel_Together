@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/prepare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="준비물"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        />
+
+</LinearLayout>
+    <!-- dialog_add_chat_room.xml -->

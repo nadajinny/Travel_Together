@@ -1,0 +1,49 @@
+# Build outputs
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
+/build/
+**/build/
+/captures/
+bin/
+gen/
+out/
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration
+local.properties
+/local.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+.navigation/
+.cache/
+
+# NDK / external builds
+.externalNativeBuild/
+.cxx/
+
+# OS / editor files
+.DS_Store
+*.log
+*.tmp
+*.hprof
+
+# Keystores and native symbols
+*.jks
+*.keystore
+
+# Node.js server artifacts
+node_modules/
+socket_server/node_modules/
